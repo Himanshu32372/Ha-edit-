@@ -47,17 +47,17 @@
     <!DOCTYPE html>
 <html>
 <head>
-  <title>Course Page</title>
+  <title>Video Editing Course</title>
 </head>
 <body style="font-family:sans-serif;">
 
   <!-- Course Preview Section -->
   <div style="max-width:600px; margin:auto; padding:20px; text-align:center;">
-    <h2>Complete Tiffin Business Guide (PDF)</h2>
-    <p>Learn how to start and grow your own school tiffin box business with this detailed PDF guide.</p>
+    <h2>Complete Video Editing Course (Downloadable)</h2>
+    <p>Learn professional video editing using Premiere Pro & DaVinci Resolve. Lifetime access to downloadable video tutorials.</p>
     
     <!-- Buy Now Button -->
-    <button id="buyNow" style="padding:10px 20px; background-color:#28a745; color:white; border:none; cursor:pointer;">Buy Now - ₹199</button>
+    <button id="buyNow" style="padding:10px 20px; background-color:#28a745; color:white; border:none; cursor:pointer;">Buy Now - ₹299</button>
   </div>
 
   <!-- Razorpay Script -->
@@ -65,14 +65,14 @@
   <script>
     document.getElementById('buyNow').onclick = function(e){
       var options = {
-          "key": rzp_test_vwI8wE1WIZusuw", // Replace with your Razorpay key
-          "amount": 99, // Amount in paise = ₹199
+          "key": "rzp_test_vwI8wE1WIZusuw", // Replace with your Razorpay Key ID
+          "amount": 99, // ₹99 in paise
           "currency": "INR",
-          "name": "Your HA edit",
-          "description": "https://drive.google.com/drive/folders/1XjZi1JAJ3hNM6ED7zS4zKqt5vfbRcEjA,
+          "name": "HA edit",
+          "description": "Video Editing Course Purchase",
           "handler": function (response){
-              // Redirect to file after payment success
-              window.location.href = "course-file.pdf"; // Replace with your file path
+              // Redirect to course file after payment
+              window.location.href = "video-editing-course.zip"; // replace with your actual file URL
           },
           "prefill": {
               "name": "",
@@ -87,9 +87,13 @@
       e.preventDefault();
     }
   </script>
+
+
+
 </body>
 </html>
 
+    <!
     <!-- Footer Section -->
 <footer style="background-color:#f2f2f2; padding:20px; text-align:center; margin-top: 50px;">
   <p><strong>Contact Us</strong></p>
